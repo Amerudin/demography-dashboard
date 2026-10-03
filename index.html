@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Malaysia Demography Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>Malaysia Demography Dashboard</h1>
+        <p>Population and Vital Statistics</p>
+    </div>
+
+    <select id="yearSelect"></select>
+</header>
+
+
+<main>
+
+    <section class="cards">
+
+        <div class="card">
+            <p>Population</p>
+            <h2 id="population">—</h2>
+        </div>
+
+        <div class="card">
+            <p>Live Births</p>
+            <h2 id="births">—</h2>
+        </div>
+
+        <div class="card">
+            <p>Deaths</p>
+            <h2 id="deaths">—</h2>
+        </div>
+
+        <div class="card">
+            <p>Total Fertility Rate</p>
+            <h2 id="tfr">—</h2>
+        </div>
+
+        <div class="card">
+            <p>Sex Ratio</p>
+            <h2 id="sexRatio">—</h2>
+        </div>
+
+    </section>
+
+
+    <section class="chart-card">
+
+        <h2>Live Births and Deaths</h2>
+
+        <canvas id="vitalChart"></canvas>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
